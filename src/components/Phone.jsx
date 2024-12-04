@@ -1,0 +1,14 @@
+import { useLoaderData } from "react-router-dom";
+
+const Phone = () => {
+    const phone = useLoaderData();
+    console.log(phone);
+    return (
+        <div>
+            <h1>phone name:{phone.name}</h1>
+            <img src={phone.image} alt="" />
+        </div>
+    );
+};
+
+export default Phone;
